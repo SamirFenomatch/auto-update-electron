@@ -1,0 +1,28 @@
+{
+  "name": "electron",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "electron .",
+    "package": "electron-builder",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "build": {
+    "publish": [{
+      "provider": "github",
+      "owner": "SamirFenomatch",
+      "repo": "auto-update-electron"
+    }]
+  },
+  "author": "Samir",
+  "license": "ISC",
+  "devDependencies": {
+    "electron": "^22.0.3",
+    "electron-builder": "^23.6.0",
+    "electron-updater": "^5.3.0"
+  },
+  "dependencies": {
+    "electron-log": "^4.4.8"
+  }
+}
